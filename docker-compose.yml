@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  hepsiburada.api:
+    image: ${DOCKER_REGISTRY-}hepsiburadaapi
+    build:
+      context: .
+      dockerfile: Hepsiburada.Api/Dockerfile
